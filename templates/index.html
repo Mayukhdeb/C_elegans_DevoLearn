@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+--><html><head><!-- OPT Demos Google Analytics --><script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-84539466-2', 'auto');
+	ga('send', 'pageview');
+</script><title>C.elegan Segematation.</title><meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><link rel="stylesheet" href="{{ url_for('static',filename= 'css/css-main.css') }}"><!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]--><noscript><link rel="stylesheet" href="{{ url_for('static',filename='css/css-noscript.css') }}">        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename= 'styles/bootstrap_min.css') }}"></noscript></head><body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="content">
+							<div class="inner">
+								<h1>C.elegan Segementation | DevoWorm</h1>
+								<p>Takes in microscopy images of embryogenesis process, segment cell bodies and can calculate the centroids and area of each of the cell.</p>
+							</div>
+						</div>
+						<nav><ul><li><a href="#intro">Intro</a></li>
+								<li><a href="#work">Library</a></li>
+								<li><a href="#about">Try it!</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul></nav></header><!-- Main --><div id="main">
+
+						<!-- Intro -->
+							<article id="intro"><h2 class="major">About C.elegans</h2>
+								<span class="image main"><img src="{{ url_for('static',filename='images/22.gif') }}" alt=""></span>
+								<p>Caenorhabditis elegans is a free-living transparent nematode about 1 mm in length that lives in temperate soil environments. It is the type species of its genus.[8] The name is a blend of the Greek caeno- (recent), rhabditis (rod-like) and Latin elegans (elegant). In 1900, Maupas initially named it Rhabditides elegans. Osche placed it in the subgenus Caenorhabditis in 1952, and in 1955, Dougherty raised Caenorhabditis to the status of genus.</p>
+								<p><h3>C.elegans | The Stages of Embryogenesis</h3></p>
+								<span class="image main"><img src="{{ url_for('static',filename='images/worm_stages.jpg') }}" alt=""></span>
+								<p>The embryo of the nematode Caenorhabditis elegans progresses through several distinctive phases in developing towards the first larval stage, when the embryonic worm first emerges from the eggshell. EmbryoIntroVID 1 provides a nice overview of the complex series of events, where rapid cell proliferation quickly leads to multiple simultaneous developmental processes happening over 12 hours, transforming a single cell into a moving animal, still encased in an inflexible eggshell, with over 600 developing cells already in action prior to hatching.</p>
+								<p><b>Fertilization.</b> The moment when the haploid oocyte and haploid sperm combine to create a diploid, single cell embryo occurs within the spermatheca of the adult hermaphrodite. For a brief period the fertilized embryo becomes covered by a membrane that may prevent polyspermy which is followed by the formation of a harder eggshell consisting of three layers secreted by the egg. The newly fertilized embryo exits prophase arrest and leaves the spermatheca to continue its development in the uterus.</p>
+								<p><b>Proliferation</b> After fertilization, the single cell embryo begins a series of highly stereotyped cell divisions. During this phase, all embryonic cells look similar in their cytoplasmic structures, and many cells also begin to make short distance migrations away from the their sister cells, through a process that has been termed “global cell sorting”. Early proliferation events span from 0 to 150 min post-fertilization (at 22°C) and take place within the uterus. Proliferation events continue in later stages, including gastrulation and morphogenesis and these occur after the embryo is laid.</p>
+								<p><b>Gastrulation.</b> Starting at the 30 cell stage, gastrulation encompasses the process by which single cells begin to become internalized and migrate into the center of the embryonic mass to eventually create separate ectodermal, endodermal and mesodermal compartments. Continued global cell sorting during this phase results in many functional cell groups becoming established by proximity rather than by sisterhood.</p>
+								<p><b>Morphogenesis.</b> This phase overlaps with the end of gastrulation, when most cells have ended proliferation and are joining tissue subgroups. Cells become structurally specialized to adopt shapes and cell contents that reflect their eventual cell fates within specialized tissue compartments. Much directed cell migration occurs where certain cells extend processes or sheet-like arms to enfold their neighbors, or penetrate through narrow passages inside the developing tissues. Some tissues begin to form syncytia sharing multiple nuclei, with the disappearance of intervening cell membranes. Terminal differentiation occurs without many additional cell divisions. In rare cases, specific cells undergo a delayed apoptotic cell death in the embryo or in the L1 larva after fulfilling their role in tissue morphogenesis.</p>
+								<p><b>Elongation. </b>Once the embryo’s developing tissues begin to form a longer worm-like shape, they become folded within the eggshell. Early elongation events begin around 350 min after the first cleavage and involve both microfilaments and microtubules. Moving through the comma, two-fold and finally the three-fold stage, the embryo decreases in circumference and increases in length until it is ready for hatching. Elongation occurs coincidentally with later stages of morphogenesis, but will be considered separately.</p>
+								<p><b>Quickening.</b> The first signs of muscle movement are seen around 430 minutes, and by the three-fold stage, the worm can move in a coordinated fashion within the egg. A series of squeezing events, and later, active wriggling motions, precedes hatching. These squeezing activities surely aid in further elongation of the animal, though they occur quite late. Quickening occurs coincidentally with the last stages of morphogenesis, but will be considered separately.</p>
+								<p><b>Hatching.</b> When the embryo contains about 600 cells and many immature tissues, the young L1 larva breaks through the eggshell to emerge into the world. At this point the L1 larva will begin postembryonic development where it will grow ten-fold in length and ten-fold in breadth before achieving adulthood.</p>
+								<br><br>
+								<p>For more info, please visit <a href = "https://www.wormatlas.org/embryo/introduction/EIntroframeset.html">Worm Atlas</a></p>
+							</article><!-- Work --><article id="work"><h2 class="major">Python Library</h2>
+								<span class="image main"><img src="{{ url_for('static',filename='images/DevoLearn.gif') }}" alt=""></span>
+								<p>Our segmentation procedure is also available for directly used in your python notebooks/code. <br> <h4>How to install it</h4> <br><b><i>pip install devolearn</i></b> <br><br>Just Open terminal in you Linux, Mac computers and copy paste the given command and press enter. <br> For windows user, open your cmd(Command Prompt) and run the given command <br></p>
+								<p><h3>How to use it?</h3></p>
+								<span class="image main"><img src="{{ url_for('static',filename= 'images/3d_segmentation_preds.gif') }}" alt=""></span>
+								<p><b>Segmenting the C. elegans embryo</b><br> Importing Model</p>
+								<p><script src="https://gist.github.com/ujjwalll/2b899d0599f46264853224fe5a6e9438.js"></script></p>
+								<p>Running the model on an image and viewing the prediction</p>
+								<p><script src="https://gist.github.com/ujjwalll/9da647c57e4dd918c21e0fed815aa273.js"></script></p>
+								<p>Running the model on a video and saving the predictions into a folder</p>
+								<p><script src="https://gist.github.com/ujjwalll/84ebd2f5bf3523f86eabfd9235a362ed.js"></script></p>
+								<br>
+								<p><b>Generating synthetic images of embryos with a Pre-trained GAN</b></p>
+								<span class="image main"><img src="{{ url_for('static',filename='images/generated_embryos_3.gif') }}" alt=""></span>
+								<p>Importing Model</p>
+								<p><script src="https://gist.github.com/ujjwalll/3d6db7a24259a8cc3a775b6c0c255577.js"></script></p>
+								<p>Generating a picture and viewing it</p>
+								<p><script src="https://gist.github.com/ujjwalll/9acfd27b976fe84e2596a0dff7ceed0e.js"></script></p>
+								<p>Generating n images and saving them into foldername with a user set size</p>
+								<p><script src="https://gist.github.com/ujjwalll/247d98a1300f9b53133de3132e1a5c1a.js"></script></p>
+								
+
+								<p><b>Predicting populations of cells within the C. elegans embryo</b></p>
+								<span class="image main"><img src="{{ url_for('static',filename='images/resnet_preds_with_input.gif') }}" alt=""></span>
+								<p>Importing Model</p>
+								<p><script src="https://gist.github.com/ujjwalll/ed3fd32d7d29ea05c2b7e74c9d99e235.js"></script></script></p>
+								<p>Loading a model instance to be used to estimate lineage populations of embryos from videos/photos.</p>
+								<p><script src="https://gist.github.com/ujjwalll/ed92fa0abe2f3be51f2915aba43e20f3.js"></script></p>
+								<p>Making a prediction from an image</p>
+								<p><script src="https://gist.github.com/ujjwalll/33f0849690b80b0579a032993f1c7351.js"></script></p>
+								<p>Making predictions from a video and saving the predictions into a CSV file</p>
+								<p><script src="https://gist.github.com/ujjwalll/ab93534b95b2751e72250b478ba875e6.js"></script></p>
+								<p>Plotting the model's predictions</p>
+								<p><script src="https://gist.github.com/ujjwalll/3224f80f41be70b34e7411687c490a33.js"></script></p>
+								
+
+
+
+
+							</article><!-- About --><article id="about"><h2 class="major">Online tool(Beta)</h2>
+								<span class="image main"><img src="{{ url_for('static',filename='images/3d_segmentation_preds.gif') }}" alt=""></span>
+								<div class="row">
+            						<div class="col-lg-5 mx-auto">
+              							<div class="p-5 bg-white shadow rounded-lg"><!-- <img src="https://res.cloudinary.com/mhmd/image/upload/v1557366994/img_epm3iz.png" alt="" width="200" class="d-block mx-auto mb-4 rounded-pill"> -->
+
+                							<h6 class="text-center" style="">
+                  										Upload your microscopy images or movie frames here
+                							</h6>
+
+            						<div class="custom-file rounded-pill mb-5">
+              								<form id="upload-file" role="form" method="post" enctype="multipart/form-data">
+                							<fieldset>
+                    						<label >Select files</label>
+                    									<input name="file" type="file" multiple="multiple">
+                							</fieldset>
+
+            								</form>
+
+            						</div>
+            					<div>
+
+                				<button id="upload-file-btn" type="button">Upload</button>
+
+              					</div>
+
+            				</div>
+            				</div>
+
+							</article><!-- Contact --><article id="contact"><h2 class="major">Maintainers</h2>
+								<h3>Facing any issues or trouble? Please reach out to our repository <a href="https://github.com/DevoLearn/devolearn">DevoLearn </a> and create your issue there. We will try to solve it as soon as possible</h3>
+								<br>
+								<h3>Not familiar with GitHub? Reach out any of the below maintainers</h3>
+								<h4>Maintainers</h4>
+								<p>Ujjwal Singh <br> Mayukh Deb<br> Vinay Varma<br> Dr. Bradley Alicea</p>
+								</ul></article><!-- Elements --><article id="elements"><h2 class="major">Elements</h2>
+
+								<section><h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr><h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr><h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section><section><h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul><li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul><h4>Alternate</h4>
+									<ul class="alt"><li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul><h4>Ordered</h4>
+									<ol><li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol><h4>Icons</h4>
+									<ul class="icons"><li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+									</ul><h4>Actions</h4>
+									<ul class="actions"><li><a href="#" class="button special">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul><ul class="actions vertical"><li><a href="#" class="button special">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul></section><section><h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table><thead><tr><th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr></thead><tbody><tr><td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr><tr><td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr><tr><td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr><tr><td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr><tr><td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr></tbody><tfoot><tr><td colspan="2"></td>
+													<td>100.00</td>
+												</tr></tfoot></table></div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt"><thead><tr><th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr></thead><tbody><tr><td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr><tr><td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr><tr><td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr><tr><td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr><tr><td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr></tbody><tfoot><tr><td colspan="2"></td>
+													<td>100.00</td>
+												</tr></tfoot></table></div>
+								</section><section><h3 class="major">Buttons</h3>
+									<ul class="actions"><li><a href="#" class="button special">Special</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul><ul class="actions"><li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul><ul class="actions"><li><a href="#" class="button special icon fa-download">Icon</a></li>
+										<li><a href="#" class="button icon fa-download">Icon</a></li>
+									</ul><ul class="actions"><li><span class="button special disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul></section><section><h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="field half first">
+											<label for="demo-name">Name</label>
+											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe"></div>
+										<div class="field half">
+											<label for="demo-email">Email</label>
+											<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld"></div>
+										<div class="field">
+											<label for="demo-category">Category</label>
+											<div class="select-wrapper">
+												<select name="demo-category" id="demo-category"><option value="">-</option><option value="1">Manufacturing</option><option value="1">Shipping</option><option value="1">Administration</option><option value="1">Human Resources</option></select></div>
+										</div>
+										<div class="field half first">
+											<input type="radio" id="demo-priority-low" name="demo-priority" checked><label for="demo-priority-low">Low</label>
+										</div>
+										<div class="field half">
+											<input type="radio" id="demo-priority-high" name="demo-priority"><label for="demo-priority-high">High</label>
+										</div>
+										<div class="field half first">
+											<input type="checkbox" id="demo-copy" name="demo-copy"><label for="demo-copy">Email me a copy</label>
+										</div>
+										<div class="field half">
+											<input type="checkbox" id="demo-human" name="demo-human" checked><label for="demo-human">Not a robot</label>
+										</div>
+										<div class="field">
+											<label for="demo-message">Message</label>
+											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea></div>
+										<ul class="actions"><li><input type="submit" value="Send Message" class="special"></li>
+											<li><input type="reset" value="Reset"></li>
+										</ul></form>
+								</section></article></div>
+
+				<!-- Footer -->
+					<footer id="footer"><p class="copyright">&copy; DevoWorm Group | Powered by OpenWorm Foundation.</a></p>
+					</footer></div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static',filename='js/js-jquery.min.js') }}"></script><script src="{{ url_for('static',filename='js/js-skel.min.js') }}"></script><script src="{{ url_for('static',filename='js/js-util.js') }}"></script><script src="{{ url_for('static',filename='js/js-main.js') }}"></script></body></html>
+
+<script>
+
+$(function() {
+    $('#upload-file-btn').click(function() {
+        var form_data = new FormData($('#upload-file')[0]);
+        $.ajax({
+            type: 'POST',
+            url: '/',
+            data: form_data,
+            contentType: false,
+            cache: false,
+            processData: false,
+            success:function(response){ document.write(response);
+            },
+        });
+    });
+});
+
+</script>
